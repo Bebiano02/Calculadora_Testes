@@ -1,7 +1,3 @@
-# Reescrevendo o arquivo solicitado com todas as correções,
-# mantendo a estrutura, nomes e comentários exatamente como enviados,
-# mas completando os testes para as versões v2, v3 e v4 separadamente.
-
 codigo_passos_detalhados = """import unittest
 import math
 from main import calculadora, calculadora_v2, calculadora_v3, calculadora_v4
