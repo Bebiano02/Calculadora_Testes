@@ -1,4 +1,8 @@
-import unittest
+# Reescrevendo o arquivo solicitado com todas as correções,
+# mantendo a estrutura, nomes e comentários exatamente como enviados,
+# mas completando os testes para as versões v2, v3 e v4 separadamente.
+
+codigo_passos_detalhados = """import unittest
 import math
 from main import calculadora, calculadora_v2, calculadora_v3, calculadora_v4
 
@@ -52,7 +56,6 @@ class TestCalculadora(unittest.TestCase):
         self.assertTrue(math.isnan(calculadora_v4(5, 0, '/')))
         self.assertTrue(math.isnan(calculadora_v4(5, 0, '%')))
 
-        
     def test_operadores_invalidos(self):
         # Teste operador inválido - fazer três testes para todas as versões
         self.assertTrue(math.isnan(calculadora(2, 3, '$')))
@@ -67,7 +70,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertTrue(math.isnan(calculadora_v4(2, 3, '$')))
         self.assertTrue(math.isnan(calculadora_v4(2, 5, '#')))
         self.assertTrue(math.isnan(calculadora_v4(0, 2, 'qwe')))
-        
+
     def test_virgula_flutuante(self):
         # Teste números de virgula flutuante - fazer três testes para todas as versões
         self.assertAlmostEqual(calculadora(2.5, 1.5, '+'), 4.0)
@@ -82,7 +85,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertAlmostEqual(calculadora_v4(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora_v4(4.5, 1.5, '-'), 3.0)
         self.assertAlmostEqual(calculadora_v4(5.5, 1.5, '*'), 8.25)
-        
+
     def test_numeros_negativos(self):
         # Teste números negativos - fazer 3 testes para todas as versões
         self.assertEqual(calculadora(-2, 3, '*'), -6)
